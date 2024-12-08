@@ -1,0 +1,32 @@
+.options {
+  display: flex;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.button {
+  text-transform: capitalize;
+  padding: 12px 24px;
+  background-color: unset;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 4px;
+  transition: background-color 500ms;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.reset {
+  background-color: #000;
+  color: #fff;
+}
+
+.reset:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
