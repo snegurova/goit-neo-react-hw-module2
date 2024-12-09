@@ -1,7 +1,11 @@
 import FeedbackItem from '../FeedbackItem/FeedbackItem';
 
-const Feedback = ({ feedback, feedbackTypes, totalFeedback }) => {
-  const positiveFeedback = Math.round((feedback.good / totalFeedback) * 100);
+const Feedback = ({
+  feedback,
+  feedbackTypes,
+  totalFeedback,
+  positiveFeedback,
+}) => {
   return (
     <ul>
       {feedbackTypes.map((feedbackType) => {

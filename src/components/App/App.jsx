@@ -34,6 +34,7 @@ function App() {
   const totalFeedback = feedbackTypes.reduce((total, feedbackType) => {
     return (total += feedback[feedbackType]);
   }, 0);
+  const positiveFeedback = Math.round((feedback.good / totalFeedback) * 100);
   return (
     <div className={styles.appWrapper}>
       <Description
@@ -51,6 +52,7 @@ function App() {
           feedback={feedback}
           feedbackTypes={feedbackTypes}
           totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
         />
       ) : (
         <Notification />
